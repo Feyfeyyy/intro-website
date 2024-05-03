@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <head>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Honk&family=Pacifico&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="css/main.css">
+<script src="javascript/main.js"></script>
+</head>
+<body>
+<h1>Hello World!</h1>
+<p>...</p>
+<p class="sml-bio">
+  I am passionate about creating cool projects and learning new things!
+</p>
+<p class="sml-bio">&#8595;</p>
+<div class="box">
+  <div>
+    <figure>
+      <img
+        class="spinner-img"
+        src="https://www.denofgeek.com/wp-content/uploads/2020/07/Inception-Ending-Explained.jpg"
+        alt="Inception"
+        decoding="async"
+        fetchpriority="high"
+        pinger-seen="true"
+      />
+      <figcaption>Representation Image.</figcaption>
+    </figure>
+  </div>
+  <div class="card">
+    <h2>Two Truths, One Lie</h2>
+    <p class="intr">
+      ( Click on the one you think is a lie,
+      <strong> if it turns green you are correct </strong>)
+    </p>
+    <ul>
+      <li onclick="checkTruth(this)">
+        I have once tour guided a group of 80 strangers around New York with no
+        knowledge of the city.
+      </li>
+      <li onclick="checkTruth(this)">
+        I have taken part in a Frank's hot wings eating contest.
+      </li>
+      <li onclick="checkLie(this)">
+        I have written a screenplay that has been adapted into a TV show.
+      </li>
+    </ul>
+  </div>
+  <div class="card">
+    <form id="WelcomeForm">
+      <label for="name">What Is Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" />
+      <input type="submit" value="Submit" />
+    </form>
+    <div class="msg" id="welcomeMessage"></div>
+    <form id="TellForm">
+      <label for="name">Tell me something:</label>
+      <input type="text" id="info" name="info" placeholder="Enter here" />
+      <input type="submit" value="Submit" />
+    </form>
+    <div class="msg" id="infoMessage"></div>
+  </div>
+</div>
+    </body>
+    <footer>
+  <p class="ftr">&copy; 2024 Feyaaz Chishty</p>
+</footer>
+</html>

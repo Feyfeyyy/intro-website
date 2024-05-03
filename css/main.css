@@ -1,0 +1,110 @@
+body {
+  background-color: #cccccc;
+  background-image: linear-gradient(red, yellow);
+  font-family: "Pacifico", cursive;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 30px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+  margin: 15px;
+  outline: solid;
+  transition: transform 0.3s ease-in-out; /* Added transition */
+}
+.card:hover {
+  transform: scale(1.1); /* Increased scale on hover */
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+  margin: -8px;
+  background-color: beige;
+  border-top: dashed;
+  border-bottom: dashed;
+}
+
+.spinner-img {
+  border-radius: 30px;
+  width: 650px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 30px;
+  transition: transform 0.3s ease-in-out; /* Added transition */
+}
+.spinner-img:hover {
+  transform: scale(1.1); /* Increased scale on hover */
+}
+
+.sml-bio {
+  color: yellow;
+}
+
+.intr {
+  font-size: 10px;
+}
+
+p {
+  font-family: "Exo", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+li {
+  padding: 5px;
+  font-family: "Exo", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: purple;
+}
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(70deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(70deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+h1::before {
+  content: "👋";
+  display: block;
+  animation: wave 3s infinite;
+}
+
+form {
+  margin-top: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.msg {
+  display: none;
+  margin: 30px;
+}
+
+.ftr {
+  font-family: "Honk", system-ui;
+  font-size: 30px;
+  font-variation-settings: "MORF" 15, "SHLN" 50;
+}
